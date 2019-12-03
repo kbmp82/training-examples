@@ -1,7 +1,7 @@
 
 //create promise
 const getDataPromise = (data) => new Promise((resolve, reject) => {
-  setTimeout(() =>{
+  setTimeout(() => {
     typeof data === 'number' ? resolve(data * 2) : reject('not a number')
   }, 2000)
 
@@ -13,9 +13,9 @@ const processData = async () => {
 }
 
 processData()
-.then((res) => {
-  console.log('data',res)
-})
-.catch((err) => {
-  console.log(err)
-})
+  .then((res) => {
+    console.log('data', res)
+  })
+  .catch((err) => {
+    console.log(err)
+  })
